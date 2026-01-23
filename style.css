@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+.hero{
+    height:100vh;
+    background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+    background-size:cover;
+    background-position:center;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.6);
+    height:100%;
+    color:white;
+    padding:20px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+h1{
+    text-align:center;
+    margin-top:40px;
+}
+
+.pays{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:60px;
+}
+
+.pays img{
+    width:80px;
+}
+
+section{
+    padding:60px 10%;
+    text-align:center;
+}
+
+.photos{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+}
+
+.photos img{
+    width:300px;
+    border-radius:10px;
+}
+
+.tarifs{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.tarif{
+    background:#f2f2f2;
+    padding:20px;
+    border-radius:10px;
+    width:200px;
+}
+
+.temoignage{
+    background:#eaeaea;
+    padding:20px;
+    margin:15px 0;
+    border-left:5px solid #3498db;
+}
+.branding{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.entreprise{
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #2a0b63;
+}
+
+.slogan{
+    font-size: 20px;
+    margin-top: 10px;
+    color: #750707;
+    font-style: initial;
+}
+#temoignage, #contact{
+    min-height: 100vh; /* force une vraie zone de scroll */
+}
+
+.contact{
+    font-size: 18px;
+    line-height: 2;
+    margin-top: 30px;
+}
+
+
+.horizontal-container{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    height: 100vh;
+    padding: 40px;          /* espace autour */
+    gap: 10px;              /* 👈 ESPACE ENTRE LES RÉSULTATS */
+}
+
+.panel{
+    min-width: 40vw;        /* un peu plus petit que l’écran */
+    padding: 50px;
+    background: #ffffff;
+    border-radius: 15px;    /* joli effet carte */
+    flex-shrink: 0;
+}
+
