@@ -1,28 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Agence de Voyage</title>
+    <title>LARA TRAVEL AGENCY</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <!-- SECTION PRINCIPALE -->
- <div class="branding">
+<div class="branding">
     <h1 class="entreprise">LARA TRAVEL AGENCY</h1>
     <p class="slogan">La priorité, c’est vous</p>
 </div>
+
 <header class="hero">
     <div class="overlay">
-
         <nav>
-            <a onclick="goTo('accueil')">Accueil</a>
-            <a onclick="goTo('apropos')">À propos</a>
-            <a onclick="goTo('tarif')">Tarif</a>
-            <a onclick="goTo('temoignage')">Témoignages</a>
-            <a onclick="goTo('contact')">Contact</a>
+            <a href="#accueil">Accueil</a>
+            <a href="#apropos">À propos</a>
+            <a href="#tarif">Tarifs</a>
+            <a href="#temoignage">Témoignages</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#contact">Contact</a>
         </nav>
 
         <h1>Voyagez et Résidez à l'International</h1>
@@ -30,27 +31,26 @@
         <!-- LOGOS DES PAYS -->
         <div class="pays">
             <div>
-                <img src="https://flagcdn.com/w80/ca.png">
+                <img src="https://flagcdn.com/w80/ca.png" alt="Canada">
                 <p>Canada<br>Qualité de vie</p>
             </div>
             <div>
-                <img src="https://flagcdn.com/w80/be.png">
+                <img src="https://flagcdn.com/w80/be.png" alt="Belgique">
                 <p>Belgique<br>Opportunités UE</p>
             </div>
             <div>
-                <img src="https://flagcdn.com/w80/fr.png">
+                <img src="https://flagcdn.com/w80/fr.png" alt="France">
                 <p>France<br>Culture & emploi</p>
             </div>
             <div>
-                <img src="https://flagcdn.com/w80/us.png">
+                <img src="https://flagcdn.com/w80/us.png" alt="USA">
                 <p>États-Unis<br>Business & innovation</p>
             </div>
         </div>
-
     </div>
 </header>
-<section id="tout" class="vertical-container">
-    
+
+<!-- SECTIONS DU SITE -->
 <section id="accueil">
     <h2>Bienvenue</h2>
     <p>Bienvenue dans notre agence spécialisée en voyages et résidences internationales.</p>
@@ -58,12 +58,9 @@
 
 <section id="apropos">
     <h2>À propos</h2>
-    <p>
-        Nous organisons des voyages touristiques, professionnels et résidentiels
-        vers le Canada, la Belgique, la France et les États-Unis.
-    </p><br><p>nous vous offrons un accompagnement dans vos procedure de voyage.</p><br><p>un accompagnement pour une residence permanente</p>
-    <br><p>un accompagnement pour des visites</p><br><p> un accompagnement pour poursuivre vos etude,travail</p><br>
-    <p><em>faites-nous confiance,le reste suivra</em></p>
+    <p>Nous organisons des voyages touristiques, professionnels et résidentiels vers le Canada, la Belgique, la France et les États-Unis.</p>
+    <p>Nous vous offrons un accompagnement dans vos procédures de voyage, pour résidence permanente, visites ou études/travail.</p>
+    <p><em>Faites-nous confiance, le reste suivra.</em></p>
 </section>
 
 <section id="tarif">
@@ -71,46 +68,50 @@
     <div class="tarifs">
         <div class="tarif">Canada<br>2500€</div>
         <div class="tarif">France<br>1800€</div>
-        <div class="tarif">Etats-unis<br>3500$</div>
-<div class="tarif">belgique<br>2000$</div>
+        <div class="tarif">États-Unis<br>3500$</div>
+        <div class="tarif">Belgique<br>2000$</div>
     </div>
 </section>
+
 <section id="temoignage">
     <h2>Témoignages</h2>
-
     <div class="temoignage">
-        <p>
-            "Grâce à cette agence, j’ai pu obtenir mon visa pour le Canada.
-            Un accompagnement sérieux du début à la fin."
-        </p>
-        <strong>ndjuika Marie loraine</strong>
+        <p>"Grâce à cette agence, j’ai pu obtenir mon visa pour le Canada. Un accompagnement sérieux du début à la fin."</p>
+        <strong>Ndjuika Marie Loraine</strong>
     </div>
-
     <div class="temoignage">
-        <p>
-            "Voyage en France très bien organisé. Service rapide et professionnel.
-            Je recommande vivement."
-        </p>
-        <strong> mabe linde varale</strong>
+        <p>"Voyage en France très bien organisé. Service rapide et professionnel. Je recommande vivement."</p>
+        <strong>Mabe Linde Varale</strong>
     </div>
 </section>
+
+<!-- QUIZ INTERACTIF -->
+<section id="quiz">
+    <h2>Quiz : Quelle destination te correspond ?</h2>
+    <p>Choisis ton type de voyage préféré :</p>
+    <div class="buttons">
+        <button onclick="showDestination('aventure')">Aventure</button>
+        <button onclick="showDestination('plage')">Plage</button>
+        <button onclick="showDestination('culture')">Culture</button>
+        <button onclick="showDestination('gastronomie')">Gastronomie</button>
+    </div>
+    <div class="result" id="result"></div>
+    <img id="destinationImage" src="" alt="" class="destination-image">
+</section>
+
 <section id="contact">
     <h2>Contact</h2>
     <div class="contact">
-      <a href="mailto:vanellenguekam@gmail.com.com?subject=Demande%20d%27information&body=Merci%20de%20nous%20avoir%20contact%C3%A9%20!%20Comment%20pouvons-nous%20vous%20assister%3F">
-  Message par email
-</a><br>
- <a href="https://wa.me/237698029479?text=Merci%20de%20nous%20avoir%20contact%C3%A9%20!%20Comment%20pouvons-nous%20vous%20assister%3F">
-  Discussion whatsapp
-</a>
-        <p>localisation: bonamoussadi</p>
+        <a href="mailto:vanellenguekam@gmail.com?subject=Demande%20d'information">Message par Gmail</a><br>
+        <a href="https://wa.me/237698029479">Discussion WhatsApp</a>
+        <p>Localisation : Bonamoussadi</p>
     </div>
 </section>
-</section>
-
 
 <script src="script.js"></script>
 </body>
 </html>
+
+
 
 
