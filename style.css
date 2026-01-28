@@ -1,135 +1,146 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY & HEADER */
+body {
     font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    line-height: 1.6;
+    color: #333;
 }
 
-body{
-    scroll-behavior: smooth;
-}
-
-.hero{
-    height:100vh;
-    background-image:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
-    background-size:cover;
-    background-position:center;
-}
-
-.overlay{
-    background:rgba(0,0,0,0.6);
-    height:100%;
-    color:white;
-    padding:20px;
-}
-
-nav{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    cursor:pointer;
-}
-
-h1{
-    text-align:center;
-    margin-top:40px;
-}
-
-.pays{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    margin-top:60px;
-}
-
-.pays img{
-    width:80px;
-}
-
-section{
-    padding:60px 10%;
-    text-align:center;
-}
-
-.photos{
-    display:flex;
-    gap:20px;
-    overflow-x:auto;
-}
-
-.photos img{
-    width:300px;
-    border-radius:10px;
-}
-
-.tarifs{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-}
-
-.tarif{
-    background:#f2f2f2;
-    padding:20px;
-    border-radius:10px;
-    width:200px;
-}
-
-.temoignage{
-    background:#eaeaea;
-    padding:20px;
-    margin:15px 0;
-    border-left:5px solid #3498db;
-}
-.branding{
+.branding {
     text-align: center;
-    margin-top: 60px;
+    padding: 20px;
 }
 
-.entreprise{
-    font-size: 48px;
+.hero {
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero .overlay {
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+}
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
     font-weight: bold;
-    letter-spacing: 2px;
-    color: #2a0b63;
 }
 
-.slogan{
-    font-size: 20px;
-    margin-top: 10px;
-    color: #750707;
-    font-style: initial;
-}
-#temoignage, #contact{
-    min-height: 100vh; /* force une vraie zone de scroll */
+nav a:hover {
+    text-decoration: underline;
 }
 
-.contact{
-    font-size: 18px;
-    line-height: 2;
-    margin-top: 30px;
-}
-
-
-.horizontal-container{
+/* PAYS */
+.pays {
     display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    height: 100vh;
-    padding: 40px;          /* espace autour */
-    gap: 10px;              /* 👈 ESPACE ENTRE LES RÉSULTATS */
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.panel{
-    min-width: 40vw;        /* un peu plus petit que l’écran */
-    padding: 50px;
-    background: #ffffff;
-    border-radius: 15px;    /* joli effet carte */
-    flex-shrink: 0;
+.pays div {
+    margin: 0 10px;
+    text-align: center;
+    color: white;
 }
 
+/* SECTIONS */
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 900px;
+}
+/* TARIFS */
+.tarifs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tarif {
+    background: #4facfe;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    flex: 1 1 150px;
+    text-align: center;
+}
+
+/* TEMOIGNAGES */
+.temoignage {
+    background: #f3f3f3;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* QUIZ */
+#quiz {
+    text-align: center;
+}
+#quiz button {
+    background: #4facfe;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#quiz button:hover {
+    background: #00f2fe;
+}
+
+.destination-image {
+    margin-top: 15px;
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: none;
+}
+
+.destination-image[src] {
+    display: block;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ff6f61;
+    }
+
+/* CONTACT */
+.contact a {
+    display: inline-block;
+    margin: 5px 0;
+    color: #4facfe;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+    
+
+
+
+
+   
